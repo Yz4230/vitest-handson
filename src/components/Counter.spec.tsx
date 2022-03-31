@@ -11,4 +11,8 @@ describe("Counter", () => {
     button.click();
     expect(getByText(/I was clicked 2 times/)).toBeInTheDocument();
   });
+  it("snapshot", () => {
+    const { container } = render(<Counter />);
+    expect(container).toMatchSnapshot();
+  });
 });

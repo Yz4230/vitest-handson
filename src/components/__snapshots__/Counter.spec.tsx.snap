@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`Counter > snapshot 1`] = `
+<div>
+  <button
+    class="css-x1g41w-Counter"
+  >
+    I was clicked 
+    0
+     times
+  </button>
+</div>
+`;
