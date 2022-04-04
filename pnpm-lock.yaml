@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@emotion/jest': ^11.8.0
   '@emotion/react': ^11.8.2
   '@emotion/styled': ^11.8.1
   '@testing-library/jest-dom': ^5.16.3
@@ -41,6 +42,7 @@ dependencies:
   react-spring: 9.4.4_react-dom@18.0.0+react@18.0.0
 
 devDependencies:
+  '@emotion/jest': 11.8.0
   '@testing-library/jest-dom': 5.16.3
   '@testing-library/react': 13.0.0_react-dom@18.0.0+react@18.0.0
   '@testing-library/react-hooks': 7.0.2_react-dom@18.0.0+react@18.0.0
@@ -384,6 +386,13 @@ packages:
       stylis: 4.0.13
     dev: false
 
+  /@emotion/css-prettifier/1.0.1:
+    resolution: {integrity: sha512-cA9Dtol47mtvWKasPC+8tkh2DS0wBkX0MMHKieXGSkGyx079V7yFY85KC0pPalcIy+vi0LbMR9DNyiJBqYgJ1Q==}
+    dependencies:
+      '@emotion/memoize': 0.7.5
+      stylis: 4.0.13
+    dev: true
+
   /@emotion/hash/0.8.0:
     resolution: {integrity: sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==}
     dev: false
@@ -394,9 +403,26 @@ packages:
       '@emotion/memoize': 0.7.5
     dev: false
 
+  /@emotion/jest/11.8.0:
+    resolution: {integrity: sha512-LfiD3cmPekVFky4L9Z9D2LpD/25JnJs1EalJGP/bmDJlqPiV8rLzUVwtfNvq7lk68o4GMxg/VRf28qPPeZKEPQ==}
+    peerDependencies:
+      '@types/jest': ^26.0.14 || ^27.0.0
+      enzyme-to-json: ^3.2.1
+    peerDependenciesMeta:
+      '@types/jest':
+        optional: true
+      enzyme-to-json:
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.17.8
+      '@emotion/css-prettifier': 1.0.1
+      chalk: 4.1.2
+      specificity: 0.4.1
+      stylis: 4.0.13
+    dev: true
+
   /@emotion/memoize/0.7.5:
     resolution: {integrity: sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==}
-    dev: false
 
   /@emotion/react/11.8.2_00a11a054056e3746b551a83b9229751:
     resolution: {integrity: sha512-+1bcHBaNJv5nkIIgnGKVsie3otS0wF9f1T1hteF3WeVvMNQEtfZ4YyFpnphGoot3ilU/wWMgP2SgIDuHLE/wAA==}
@@ -3118,6 +3144,11 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
+  /specificity/0.4.1:
+    resolution: {integrity: sha512-1klA3Gi5PD1Wv9Q0wUoOQN1IWAuPu0D1U03ThXTr0cJ20+/iq2tHSDnK7Kk/0LXJ1ztUB2/1Os0wKmfyNgUQfg==}
+    hasBin: true
+    dev: true
+
   /string-width/4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
     engines: {node: '>=8'}
@@ -3186,7 +3217,6 @@ packages:
 
   /stylis/4.0.13:
     resolution: {integrity: sha512-xGPXiFVl4YED9Jh7Euv2V220mriG9u4B2TA6Ybjc1catrstKD2PpIdU3U0RKpkVBC2EhmL/F0sPCr9vrFTNRag==}
-    dev: false
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}

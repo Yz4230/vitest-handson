@@ -1,9 +1,16 @@
 // Vitest Snapshot v1
 
 exports[`Counter > snapshot 1`] = `
+.emotion-0 {
+  padding: 1em;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
 <div>
   <button
-    class="css-x1g41w-Counter"
+    class="emotion-0"
   >
     I was clicked 
     0
